@@ -1,11 +1,13 @@
 body {
   background: url('./bg.jpg');
 }
+
 section {
   width: 80vmin;
   height: 80vmin;
   margin: auto;
-  background: #fff;
+  background: #fff url(./clock.svg) no-repeat center;
+  background-size: 72vmin;
   border: 3vmin solid #000;
   border-radius: 50%;
   margin-top: 3vmin;
@@ -16,17 +18,6 @@ section {
   z-index: 1;
 }
 
-section:before {
-  content: '';
-  width: 95%;
-  height: 95%;
-  border-radius: 50%;
-  display: block;
-  background: transparent;
-  border: 2vmin solid white;
-}
-
-/* highlight at top left of black outline */
 section:after {
   content: '';
   width: 105%;
@@ -116,41 +107,4 @@ section:after {
 }
 .second-hand:after {
   top: -2.25vmin;
-}
-
-.hour12,
-.hour1,
-.hour2,
-.hour3,
-.hour4,
-.hour5 {
-  height: 1vmin;
-  width: 55vmin;
-  background: transparent;
-  border-left: 7vmin solid #000;
-  border-right: 7vmin solid #000;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-}
-
-.hour3 {
-  transform: rotate(90deg) translate(0, 34vmin);
-}
-
-.hour1 {
-  transform: rotate(120deg) translate(17vmin, 30vmin);
-}
-
-.hour2 {
-  transform: rotate(150deg) translate(29vmin, 18vmin);
-}
-
-.hour4 {
-  transform: rotate(210deg) translate(30vmin, -17vmin);
-}
-
-.hour5 {
-  transform: rotate(240deg) translate(17vmin, -30vmin);
 }
