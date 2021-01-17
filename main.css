@@ -110,13 +110,16 @@ section:after {
 }
 
 .btn {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 150px;
   box-shadow: 0px 1px 0px 0px #fff6af;
   background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
   background-color: #ffec64;
   border-radius: 6px;
   border: 1px solid #ffaa22;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   color: #333333;
   font-family: Arial;
